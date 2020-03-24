@@ -4,7 +4,7 @@ Windows
     - Windows -> Run ("Ausführen") -> "sysdm.cpl"
     - Advanced -> Environment Variables
     - System Variables "Edit" 
-    - Add the installation path, something like "C:\Users\Jan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7"
+    - Add the installation path, something like "C:\Users\XXXXX\AppData\Local\Programs\Python\Python37"
  - open up a terminal and type "python" to check if everything worked
  
  - install "git": https://git-scm.com/download/win
