@@ -14,4 +14,4 @@ Windows
  - "(env)" should appear at the beginning of the terminal line
  - install needed dependencies with command ``pip install -r requirements.txt``
  - run the test script ``python covidStats.py``
- - a browser window should open and a pie chart! 
+ - a browser window should open and a pie chart is shown! 
