@@ -1,17 +1,24 @@
 Windows  
 - Download Python3 (version 3.7) at https://www.python.org/downloads/ [Windows x86-64 executable installer]
 - add python to your PATH 
-    - Windows -> Run ("Ausführen") -> "sysdm.cpl"
-    - Advanced -> Environment Variables
-    - System Variables "Edit" 
-    - Add the installation path, something like "C:\Users\XXXXX\AppData\Local\Programs\Python\Python37" (if you don't know the path, press the windows key and type in "python", right click to show the installation directory and right click on "Python 3.7 (64-bit)" again to switch to the true installation path. Click on the folder path in the top bar to copy the path)
- - open up a terminal and type "python" to check if everything worked
- - install "git": https://git-scm.com/download/win
- - continue in the same terminal and download/clone this project: ``git clone https://github.com/kono94/covid-analysis.git``
- - get into the folder ``cd covid-analysis``
+    - Press the windows key and start typing "umgebungsvariable", click on "Systemumgebungsvariablen bearbeiten"
+    - click on "Umgebungsvariablen" near the bottom
+    - Under System variables look for the variable "Path", select it and press "Edit" 
+    - On the right side, click "new" and paste in the installation path, something like "C:\Users\XXXXX\AppData\Local\Programs\Python\Python37" (if you don't know the path, press the windows key and type in "python", right click to show the installation directory ("Dateispeicherort öffnen") and right click on "Python 3.7 (64-bit)" again ("Dateispeicherort öffnen") to switch to the true installation path. Click on the folder path in the top bar to copy the path)
+ - open up a terminal (press the windows key and search for "terminal") ->  type "python" and press enter to check if everything worked (Python 3.7.7 should be printed out and a new line starting with ">>>" is shown). Close the terminal window completely afterwards.
+ - download and install "git": https://git-scm.com/download/win [64-bit Git for Windows Setup]
+ - after installing git, right click anywhere on your desktop and select "git bash here"; a new more colorful terminal will be displayed
+ - (Highlighted commands shown below should be copy pasted into the terminal, pressing enter after pasting in the command)
+ - download/clone this project (copy paste into the terminal and press enter): ``git clone https://github.com/kono94/covid-analysis.git``
+ - stay in the terminal and type ``cd covid-analysis`` to get into the folder
  - create a virtual environment ``python -m venv env``
- - enter the environment ``env\Scripts\activate.bat``
- - "(env)" should appear at the beginning of the terminal line
+ - enter the environment ``source env/Scripts/activate``
+ - "(env)" should appear in the next terminal line
  - install needed dependencies with command ``pip install -r requirements.txt``
- - run the test script ``python covidStats.py``
+ - run the test script ``python covidStats.py`` ONLY IF you get an error saying "ModuleNotFoundError: No module named 'tkinter'" follow these steps:
+    - press the windows key, type and open "Programme hinzufügen oder entfernen" 
+    - Scroll down until your find "Python 3.7.7(64 bit)", click on it and select "Ändern"
+    - Select "Modify"
+    - Make sure the checkbox "tcl/tk and IDLE" is selected, if not, select it and press "next" and "install"
+    - try running ``python covidStats.py`` again
  - a browser window should open and a pie chart is shown! 
